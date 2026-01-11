@@ -1,0 +1,4 @@
+mountpoints:
+  /:
+    url: https://content.da.live/meejain/xcatv3-grace/
+    type: markup

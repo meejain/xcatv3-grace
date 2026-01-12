@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-culture",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-01-11T15:30:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://grace.com/",
+    "originPage": "Grace Homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "culture-showcase",
+    "imagePattern": "large-images"
+  },
+  "contentPattern": {
+    "structure": "2 columns with image + text + CTA each",
+    "buttonCount": 2,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "employee culture sections",
+      "about us content",
+      "two parallel content blocks with images"
+    ],
+    "notSuitableFor": [
+      "asymmetric layouts",
+      "text-only columns",
+      "more than 2 columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-01-11T15:30:00.000Z"
+  }
+}

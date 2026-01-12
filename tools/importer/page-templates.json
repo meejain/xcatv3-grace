@@ -1,0 +1,39 @@
+{
+  "templates": [
+    {
+      "name": "grace-homepage",
+      "urls": ["https://grace.com/"],
+      "description": "Grace homepage template with hero, product cards, culture columns, industries, video, and insights sections",
+      "blocks": [
+        {
+          "name": "hero-banner",
+          "instances": [".hero__section", ".generic-hero"]
+        },
+        {
+          "name": "cards-product",
+          "instances": [".col-lg-3 .card", "section .card-list .card-group"],
+          "section": "products"
+        },
+        {
+          "name": "columns-culture",
+          "instances": [".col-lg-6 .section", "section article .row .col-lg-6"]
+        },
+        {
+          "name": "video-embed",
+          "instances": [".media-callout .media-video", ".cmp-media-callout .right-media.video"],
+          "section": "dark"
+        },
+        {
+          "name": "section-value-prop",
+          "instances": [".cmp-card-list.one-column"],
+          "section": "light-gray"
+        },
+        {
+          "name": "section-insights",
+          "instances": ["#blogs", "section#blogs"],
+          "section": "light-gray"
+        }
+      ]
+    }
+  ]
+}

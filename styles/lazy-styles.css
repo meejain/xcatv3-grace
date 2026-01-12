@@ -1,1 +1,63 @@
-/* add global styles that can be loaded post LCP here */
+/* Lazy loaded styles for Grace website */
+
+/* Additional button styling for Learn about Grace links */
+main .section.light-gray p > a:not(.button) {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: var(--grace-green);
+  color: #000;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+main .section.light-gray p > a:not(.button):hover {
+  background-color: var(--grace-green-hover);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* View all industries link styling */
+main .section p > a[href*="industries"]:not(.button) {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: transparent;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+main .section p > a[href*="industries"]:not(.button):hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Industry images in columns - smaller size */
+.columns-culture p > a picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Insights cards category labels */
+.cards-product .cards-product-card-body p strong:first-child {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+/* View all insights link */
+main .section p > a[href*="insights"] strong {
+  font-weight: 600;
+}

@@ -1,11 +1,13 @@
+/* Grace Columns Culture Block */
 .columns-culture > div {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 40px;
 }
 
 .columns-culture img {
   width: 100%;
+  display: block;
 }
 
 .columns-culture > div > div {
@@ -20,35 +22,77 @@
   display: block;
 }
 
+.columns-culture h3 {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media (width >= 900px) {
+  .columns-culture h3 {
+    font-size: 32px;
+  }
+}
+
 .columns-culture p {
-  line-height: 1.6;
+  line-height: 1.8;
   color: #333;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.columns-culture p strong {
+  font-weight: 600;
+  color: #000;
+}
+
+.columns-culture a:not(.button) {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.columns-culture a:not(.button):hover {
+  text-decoration: underline;
+  color: var(--link-hover-color);
 }
 
 .columns-culture a.button {
   display: inline-block;
-  padding: 12px 24px;
-  background-color: #fff;
-  border: 2px solid #333;
-  color: #333;
+  padding: 10px 24px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 25px;
+  color: #000;
   text-decoration: none;
   margin-top: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
 }
 
 .columns-culture a.button:hover {
-  background-color: #333;
+  background-color: #000;
   color: #fff;
 }
 
+/* Two column layout on desktop */
 @media (width >= 900px) {
   .columns-culture > div {
     align-items: flex-start;
     flex-direction: row;
-    gap: 48px;
+    gap: 60px;
   }
 
   .columns-culture > div > div {
     flex: 1;
     order: unset;
+  }
+  
+  .columns-culture.columns-culture-2-cols > div > div {
+    flex: 0 0 calc(50% - 30px);
   }
 }

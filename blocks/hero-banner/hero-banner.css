@@ -53,14 +53,14 @@
 }
 
 /* Content row styling */
-/* .hero-banner > div:last-child {
+.hero-banner > div:last-child {
   position: relative;
   z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-} */
+}
 
 /* Hero heading - target strong text before the button */
 .hero-banner p > strong:first-child {
